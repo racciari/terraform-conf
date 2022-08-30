@@ -1,0 +1,12 @@
+# README
+
+# Use secret file to declare:
+# access_key / secret_key / project_id / zone / region
+$ terraform plan -var-file="secret.tfvars"
+
+## Import instance secgroup
+$ terraform import scaleway_instance_security_group.default_security_group $zone/$id
+## Import instance IP
+$ terraform import scaleway_instance_ip.vade2splunk_public_ip $zone/$id
+## Import server
+$ terraform import scaleway_instance_server.vade2splunk $zone/$id
